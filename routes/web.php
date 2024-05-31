@@ -46,6 +46,8 @@ Route::post('/editcategory/save/{id}', [App\Http\Controllers\AdminController::cl
 
 Route::get('/products', [App\Http\Controllers\AdminController::class, "products"])->name('products');
 
+Route::get('/companies', [App\Http\Controllers\AdminController::class, "companies"])->name('companies');
+
 Route::get('/category', [App\Http\Controllers\AdminController::class, "category"])->name('category');
 
 Route::get('/admin', [App\Http\Controllers\AdminController::class, "admin"])->name('admin');
@@ -54,7 +56,29 @@ Route::get('/dashboard', [App\Http\Controllers\AdminController::class, "admin"])
 
 Route::post('/createproduct/save', [App\Http\Controllers\AdminController::class, "addProduct"])->name('save');
 
+Route::post('/createcompany/save', [App\Http\Controllers\AdminController::class, "addCompany"])->name('addCompany');
+
 Route::post('/createcategory/save', [App\Http\Controllers\AdminController::class, "addCategory"])->name('addCategory');
+
+Route::get('/createcompany', [App\Http\Controllers\AdminController::class, "createCompany"])->name('createCompany');
+
+Route::get('/editcompany/{id}', [App\Http\Controllers\AdminController::class, "editCompany"])->name('editCompany');
+
+Route::get('/deletecompany/{id}', [App\Http\Controllers\AdminController::class, "deleteCompany"])->name('deleteCompany');
+
+Route::post('/editcompany/save/{id}', [App\Http\Controllers\AdminController::class, "saveEditedCompany"])->name('saveEditedCompany');
+
+Route::get('/ledger/{id}', [App\Http\Controllers\AdminController::class, "ledger"])->name('ledger');
+
+Route::get('/createledger', [App\Http\Controllers\AdminController::class, "createLedger"])->name('createLedger');
+
+Route::post('/createledger/save', [App\Http\Controllers\AdminController::class, "addLedger"])->name('addLedger');
+
+Route::get('/editledger/{id}', [App\Http\Controllers\AdminController::class, "editLedger"])->name('editLedger');
+
+Route::get('/deleteledger/{id}', [App\Http\Controllers\AdminController::class, "deleteLedger"])->name('deleteLedger');
+
+Route::post('/editledger/save/{id}', [App\Http\Controllers\AdminController::class, "saveEditedLedger"])->name('saveEditedLedger');
 
 });
 Auth::routes();

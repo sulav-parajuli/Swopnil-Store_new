@@ -129,6 +129,24 @@
         </a>
       </li>
       <li>
+        <a href="/createledger" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          Create Ledger
+        </a>
+      </li>
+      <li>
+        <a href="/companies" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Parties
+        </a>
+      </li>
+      <li>
+        <a href="/createcompany" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Create Parties
+        </a>
+      </li>
+      <li>
         <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           Users
